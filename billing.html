@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing Page</title>
+    <link rel="stylesheet" href="billing_style.css">
+    <style>
+        #checkoutBtn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width:100%;
+}
+
+#checkoutBtn:hover {
+    background-color: #0056b3;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Section 1: Categories -->
+        <div class="section" id="categories">
+            <h3>Categories</h3>
+            <ul id="categoryList"></ul>
+        </div>
+
+        <!-- Section 2: Items -->
+        <div class="section" id="items">
+            <h3>Items</h3>
+            <div id="itemList"></div>
+        </div>
+
+        <!-- Section 3: Bill -->
+        <div class="section" id="bill">
+            <h3>Bill</h3>
+            <table id="billTable">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <div id="totalAmount">
+                <strong>Total: </strong><span id="totalPrice">0</span>
+            </div>
+            <button id="checkoutBtn">Checkout</button>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="billing_script.js"></script>
+    
+</body>
+</html>
